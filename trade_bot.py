@@ -20,8 +20,8 @@ from datetime import datetime, timedelta
 warnings.filterwarnings("ignore")
 
 # ========== TELEGRAM AYARLARI ==========
-TELEGRAM_TOKEN = "7968419128:AAESyl20HCyUGM9MpSqforWX8QQm7R9BwdM"
-CHAT_ID = "1065616509"
+TELEGRAM_TOKEN = ""
+CHAT_ID = ""
 
 # ========== COINLER ==========
 COINS = [
@@ -328,3 +328,4 @@ while True:
         print("Rapor zamanlama hatası:", e)
 
     time.sleep(300)
+
