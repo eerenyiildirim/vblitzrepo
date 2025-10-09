@@ -1,4 +1,5 @@
-import requests, time, numpy as np, warnings
+import requests, time, numpy as np, pandas as pd, csv, warnings
+from datetime import datetime, timedelta
 warnings.filterwarnings("ignore")
 
 # ========== TELEGRAM AYARLARI ==========
@@ -10,15 +11,21 @@ COINS = ["AVAXUSDT","BCHUSDT","HBARUSDT","XRPUSDT",
           "ASTERUSDT","THETAUSDT","REZUSDT","ZENUSDT","ENAUSDT","FORMUSDT",
           "GUNUSDT","HOOKUSDT","PENGUUSDT","OPUSDT","NEARUSDT",
           "SCRTUSDT","THEUSDT","XPLUSDT","LTCUSDT","WLFIUSDT","EIGENUSDT"]
+]
 
 INTERVAL = "1h"
 RR_LIMIT = 1.8
 VOLUME_LIMIT = 1.2
 
 # ========== TELEGRAM MESAJ GÖNDERME ==========
-def telegram_mesaj_gonder(metin):
+def telegram_mesaj_gonder(metin, premium=False):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-    payload = {"chat_id": CHAT_ID, "text": metin, "parse_mode": "Markdown"}
+    payload = {
+        "chat_id": CHAT_ID,
+        "text": metin,
+        "parse_mode": "Markdown",
+        "disable_notification": False if premium else True
+    }
     try:
         requests.post(url, json=payload)
     except Exception as e:
@@ -34,7 +41,7 @@ def get_klines(symbol, interval="1h", limit=100):
         return closes, volumes
     raise ValueError(f"{symbol} için veri alınamadı")
 
-# ========== RSI, EMA, LEVERAGE ==========
+# ========== TEKNİK HESAPLAR ==========
 def rsi(data, period=14):
     delta = np.diff(data)
     gain = np.maximum(delta, 0)
@@ -63,109 +70,39 @@ def leverage_onerisi(rsi_val, yön):
         else: return "9x – 12x (güçlü düşüş trendi)"
     return "5x"
 
-# ========== HEDEF TAKİBİ ==========
-aktif_islemler = {}
+# ========== TP SÜRESİ TAHMİNİ ==========
+def tahmini_sure_hesapla(closes, fiyat, tp1):
+    son_farklar = np.abs(np.diff(closes[-20:]) / closes[-20:-1])
+    ort_hiz = np.mean(son_farklar)
+    if ort_hiz == 0:
+        return "Belirsiz"
+    hedef_fark = abs((tp1 - fiyat) / fiyat)
+    mum_sayisi = hedef_fark / ort_hiz
+    saat = mum_sayisi * 1
+    if saat < 1:
+        dk = int(saat * 60)
+        return f"≈ {dk} dk"
+    elif saat < 24:
+        return f"≈ {saat:.1f} saat"
+    else:
+        gun = saat / 24
+        return f"≈ {gun:.1f} gün"
 
-def fiyat_takip_et(coin, fiyat):
-    if coin in aktif_islemler:
-        tp1, tp2, sl, yön, tp1_hit = aktif_islemler[coin]
-        if yön == "LONG":
-            if fiyat >= tp1 and not tp1_hit:
-                telegram_mesaj_gonder(f"🎯 *{coin} TP1 hedefi gerçekleşti!* (Long)\nFiyat: {fiyat:.4f}")
-                aktif_islemler[coin] = (tp1, tp2, sl, yön, True)
-            if fiyat >= tp2:
-                telegram_mesaj_gonder(f"🏁 *{coin} TP2 hedefi gerçekleşti!* Pozisyon kapatıldı.\nFiyat: {fiyat:.4f}")
-                del aktif_islemler[coin]
-            if fiyat <= sl:
-                telegram_mesaj_gonder(f"🛑 *{coin} Stop Loss tetiklendi.*\nFiyat: {fiyat:.4f}")
-                del aktif_islemler[coin]
-        elif yön == "SHORT":
-            if fiyat <= tp1 and not tp1_hit:
-                telegram_mesaj_gonder(f"🎯 *{coin} TP1 hedefi gerçekleşti!* (Short)\nFiyat: {fiyat:.4f}")
-                aktif_islemler[coin] = (tp1, tp2, sl, yön, True)
-            if fiyat <= tp2:
-                telegram_mesaj_gonder(f"🏁 *{coin} TP2 hedefi gerçekleşti!* Pozisyon kapatıldı.\nFiyat: {fiyat:.4f}")
-                del aktif_islemler[coin]
-            if fiyat >= sl:
-                telegram_mesaj_gonder(f"🛑 *{coin} Stop Loss tetiklendi.* (Short)\nFiyat: {fiyat:.4f}")
-                del aktif_islemler[coin]
+# ========== GEÇMİŞ KAYIT SİSTEMİ ==========
+def kaydet_islem(coin, yön, fiyat, tp1, tp2, sl, hedef, sonuc, sure_saat):
+    try:
+        with open("trade_history.csv", mode="a", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow([
+                datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                coin, yön, f"{fiyat:.4f}", f"{tp1:.4f}", f"{tp2:.4f}",
+                f"{sl:.4f}", hedef, sonuc, f"{sure_saat:.2f}"
+            ])
+    except Exception as e:
+        print("📁 İşlem geçmişi kaydedilemedi:", e)
 
-# ========== ANA DÖNGÜ ==========
-while True:
-    for coin in COINS:
-        try:
-            closes, volumes = get_klines(coin, INTERVAL)
-            if len(closes) < 30:
-                print(f"{coin}: Yetersiz veri, atlanıyor.")
-                continue
-
-            fiyat = closes[-1]
-            ema7, ema25 = ema(closes, 7)[-1], ema(closes, 25)[-1]
-            rsi_val = rsi(closes)[-1]
-            son_hacim = volumes[-1]
-            ort_hacim = np.mean(volumes[-20:])
-            hacim_orani = son_hacim / ort_hacim if ort_hacim > 0 else 1
-
-            # Hacim zayıfsa atla
-            if hacim_orani < 1.0:
-                print(f"{coin}: hacim yetersiz ({hacim_orani:.2f}x), atlandı.")
-                continue
-
-            tp_oran, sl_oran = 0.025, 0.015
-            tp1 = fiyat * (1 + tp_oran)
-            tp2 = fiyat * (1 + (tp_oran * 2))
-            sl = fiyat * (1 - sl_oran)
-            rr = (tp1 - fiyat) / (fiyat - sl) if fiyat > sl else 0
-
-            if rr < RR_LIMIT:
-                print(f"{coin}: düşük R/R ({rr:.2f}), sinyal gönderilmedi.")
-                continue
-
-            # Trend gücü farkı (EMA7-EMA25 oranı)
-            trend_gucu = abs((ema7 - ema25) / ema25) * 100
-
-            # PREMIUM kontrolü (EMA farkı > 0.5% ve hacim > 1.2x ve RSI güçlü bölgede)
-            premium = (
-                trend_gucu > 0.5 and
-                hacim_orani >= VOLUME_LIMIT and
-                ((55 < rsi_val < 67) or (33 < rsi_val < 45))
-            )
-
-            # AL sinyali
-            if ema7 > ema25 and 55 < rsi_val < 70:
-                lev = leverage_onerisi(rsi_val, "LONG")
-                icon = "🌟 PREMIUM SİNYAL 🌟" if premium else "📈 AL SİNYALİ"
-                mesaj = (f"{icon} — {coin}\n\n"
-                         f"💰 Fiyat: {fiyat:.4f}\n📊 RSI: {rsi_val:.2f}\n"
-                         f"📈 Trend Gücü: {trend_gucu:.2f}%\n"
-                         f"⚙️ Kaldıraç: {lev}\n📊 Hacim: {hacim_orani:.2f}x\n"
-                         f"📈 Risk/Ödül: {rr:.2f}\n\n"
-                         f"🎯 TP1: {tp1:.4f}\n🎯 TP2: {tp2:.4f}\n🛑 SL: {sl:.4f}")
-                telegram_mesaj_gonder(mesaj)
-                aktif_islemler[coin] = (tp1, tp2, sl, "LONG", False)
-
-            # SAT sinyali
-            elif ema7 < ema25 and 30 < rsi_val < 45:
-                tp1_s, tp2_s, sl_s = fiyat * (1 - tp_oran), fiyat * (1 - (tp_oran * 2)), fiyat * (1 + sl_oran)
-                rr_s = (fiyat - tp1_s) / (sl_s - fiyat) if sl_s > fiyat else 0
-                if rr_s < RR_LIMIT:
-                    continue
-                lev = leverage_onerisi(rsi_val, "SHORT")
-                icon = "🌟 PREMIUM SHORT 🌟" if premium else "📉 SHORT SİNYALİ"
-                mesaj = (f"{icon} — {coin}\n\n"
-                         f"💰 Fiyat: {fiyat:.4f}\n📊 RSI: {rsi_val:.2f}\n"
-                         f"📉 Trend Gücü: {trend_gucu:.2f}%\n"
-                         f"⚙️ Kaldıraç: {lev}\n📊 Hacim: {hacim_orani:.2f}x\n"
-                         f"📈 Risk/Ödül: {rr_s:.2f}\n\n"
-                         f"🎯 TP1: {tp1_s:.4f}\n🎯 TP2: {tp2_s:.4f}\n🛑 SL: {sl_s:.4f}")
-                telegram_mesaj_gonder(mesaj)
-                aktif_islemler[coin] = (tp1_s, tp2_s, sl_s, "SHORT", False)
-
-            fiyat_takip_et(coin, fiyat)
-            time.sleep(0.5)
-
-        except Exception as e:
-            print(f"{coin} hata: {e}")
-            continue
-
-    time.sleep(300)
+# Başlık satırı oluştur
+try:
+    with open("trade_history.csv", "x", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["Zaman", "Coin", "Yön", "Giriş", "TP1", "TP2", "SL"]()
