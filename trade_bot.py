@@ -1,6 +1,21 @@
-        import requests, time, numpy as np, pandas as pd, csv, warnings
-        from datetime import datetime, timedelta
-        warnings.filterwarnings("ignore")
+# ========== OTOMATİK MODÜL YÜKLEYİCİ ==========
+import importlib, subprocess, sys
+
+def ensure_package(pkg):
+    try:
+        importlib.import_module(pkg)
+    except ImportError:
+        print(f"📦 {pkg} bulunamadı, yükleniyor...")
+        subprocess.check_call([sys.executable, "-m", "pip", "install", pkg])
+
+# Gerekli modüller
+for package in ["requests", "numpy", "pandas"]:
+    ensure_package(package)
+
+# ========== NORMAL IMPORTLAR ==========
+import requests, time, numpy as np, pandas as pd, csv, warnings
+from datetime import datetime, timedelta
+warnings.filterwarnings("ignore")
 
         # ========== TELEGRAM AYARLARI ==========
         TELEGRAM_TOKEN = "7968419128:AAESyl20HCyUGM9MpSqforWX8QQm7R9BwdM"
@@ -284,3 +299,4 @@
                             f"💰 Fiyat: {fiyat:.4f}\n📊 RSI: {rsi_val:.2f}\n"
                             f"📉 Trend Gücü: {trend_gucu:.2f}%\n📊 Hacim: {hacim_orani:.2f}x\n"
                             f"⚙️ Kaldıraç
+
