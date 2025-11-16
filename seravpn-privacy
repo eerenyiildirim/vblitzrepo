@@ -1,0 +1,206 @@
+1. Veri Sorumlusu
+
+Bu Uygulama kapsamındaki kişisel verilerinizden sorumlu olan taraf:
+
+E-posta: eerenyiildirim@gmail.com
+
+Gizlilikle ilgili tüm soru ve talepleriniz için yukarıdaki e-posta adresi üzerinden bizimle iletişime geçebilirsiniz.
+
+2. Toplanan Veriler
+
+SeraVPN, hizmeti sunmak, geliştirmek ve güvenliğini sağlamak için aşağıdaki veri kategorilerini işleyebilir:
+
+2.1. Hesap ve Abonelik Bilgileri
+
+Google Play / App Store satın alma ve abonelik kimliği
+
+Satın alma tarihi, plan türü (aylık, yıllık vb.), yenileme bilgisi
+
+Abonelik durumunuz (aktif, iptal, sona erme tarihi vb.)
+
+Ödeme bilgileriniz (kredi kartı numarası vb.) Google Play veya App Store tarafından işlenir. SeraVPN, kart bilgilerinize erişmez.
+
+2.2. Cihaz ve Uygulama Bilgileri
+
+Cihaz modeli ve markası
+
+İşletim sistemi türü ve sürümü (Android versiyonu vb.)
+
+Uygulama sürümü
+
+Dil ve bölge ayarları
+
+2.3. Bağlantı ve Performans Verileri
+
+VPN sunucusuna bağlanma ve bağlantı kesme zamanı
+
+Seçtiğiniz sunucu/ülke lokasyonu
+
+Toplam veri kullanımı (gönderilen/alınan veri miktarı)
+
+Hata, çökme (crash) ve performans logları
+
+Bu veriler, VPN hizmetinin çalışması, performans analizi ve güvenlik için kullanılır.
+
+2.4. Analitik ve Reklam Verileri
+
+SeraVPN, Uygulamanın kullanımını analiz etmek ve reklamları yönetmek için üçüncü taraf servisler kullanabilir:
+
+Firebase Analytics
+
+Firebase Crashlytics
+
+Google AdMob (reklam gösterimi)
+
+Google Play Billing (abonelik yönetimi)
+
+Bu hizmetler; cihaz tanımlayıcıları, yaklaşık konum, kullanım istatistikleri gibi kişisel olmayan veya sınırlı kişisel veri toplayabilir.
+
+3. VPN Trafiği ve No-Log Politikası
+
+SeraVPN, VPN hizmeti kapsamında:
+
+Ziyaret ettiğiniz web sitelerinin içeriğini,
+
+DNS sorgularınızın ayrıntılı kaydını,
+
+Uygulamalarınızın trafik içeriklerini
+
+bilerek ve isteyerek loglamamayı amaçlayan bir “no-log” yaklaşımı benimser.
+
+Hizmetin işletilmesi ve güvenliğinin sağlanması için yalnızca aşağıdaki sınırlı teknik veriler saklanabilir:
+
+Bağlantı zamanı (bağlanma ve bağlantı kesme anı)
+
+Seçilen sunucu/ülke
+
+Toplam veri kullanımı (MB/GB cinsinden)
+
+Bu veriler, kötüye kullanımın tespiti, ağ kapasite planlaması ve güvenlik amaçlarıyla makul sürelerle saklanır.
+
+4. Verilerin Kullanım Amaçları
+
+Topladığımız verileri aşağıdaki amaçlarla kullanırız:
+
+VPN hizmetinin sunulması ve çalışmasının sağlanması
+
+Uygulama performansının izlenmesi ve iyileştirilmesi
+
+Hata ve çökmelerin tespit edilmesi, teknik sorunların çözülmesi
+
+Aboneliklerin doğrulanması, hesap ve lisans yönetimi
+
+(Varsa) Uygulama içi reklamların gösterilmesi ve optimize edilmesi
+
+Dolandırıcılık ve kötüye kullanımların tespiti ve önlenmesi
+
+Yasal yükümlülüklerin yerine getirilmesi
+
+5. Hukuki Dayanaklar
+
+Kişisel verileriniz, yürürlükteki mevzuata uygun olarak aşağıdaki hukuki sebeplere dayanılarak işlenir:
+
+Sözleşmenin ifası: SeraVPN hizmetini sunmak için zorunlu olan veriler
+
+Meşru menfaat: Güvenlik, performans, hata giderme, dolandırıcılık önleme
+
+Açık rıza: Yasal olarak gerekli olduğu durumlarda analitik ve reklam verileri
+
+6. Verilerin Üçüncü Taraflarla Paylaşımı
+
+Verileriniz, aşağıdaki sınırlı durumlarda üçüncü taraflarla paylaşılabilir:
+
+Hizmet Sağlayıcılar
+
+Sunucu ve barındırma (hosting) altyapısı sağlayıcıları
+
+Analitik hizmetleri (Firebase Analytics vb.)
+
+Crash ve hata izleme hizmetleri (Firebase Crashlytics vb.)
+
+Reklam ağları (Google AdMob vb.)
+
+Ödeme ve abonelik yönetimi sağlayıcıları (Google Play Billing, App Store)
+
+Yasal Yükümlülükler
+Yasal zorunluluk olması, geçerli bir mahkeme kararı veya yetkili resmi mercilerden gelen bağlayıcı bir talep halinde, ilgili makamlarla sınırlı ölçüde veri paylaşılabilir.
+
+Şirket İşlemleri
+Şirketin tamamının veya bir bölümünün devri, birleşme, iflas gibi durumlarda, gizlilik yükümlülükleri korunmak kaydıyla veriler devralan tarafa aktarılabilir.
+
+SeraVPN, verilerinizi satmaz ve pazarlamaz.
+
+7. Veri Saklama Süreleri
+
+Veriler, işleme amaçları için gerekli olan süre boyunca ve ilgili mevzuatta öngörülen süreleri aşmayacak şekilde saklanır. Örnek olarak:
+
+Abonelik ve ödeme kayıtları: yürürlükteki mali mevzuatta belirtilen süre boyunca
+
+Bağlantı ve teknik loglar: güvenlik ve performans amaçlarıyla makul bir süre (ör. en fazla 90 gün)
+
+Hata/crash logları: sorunun analizi ve düzeltilmesi için gereken süre boyunca
+
+Süre sonunda veriler, anonimleştirilir veya güvenli şekilde silinir.
+
+8. Veri Güvenliği
+
+SeraVPN, verilerinizi korumak için teknik ve idari tedbirler alır:
+
+Veri iletiminde şifreleme (örn. TLS)
+
+Sunucu ve veri tabanı erişim yetkilerinin sınırlandırılması
+
+Güvenlik duvarı ve saldırı tespit sistemleri
+
+Düzenli güvenlik kontrolleri
+
+Bununla birlikte hiçbir sistemin %100 güvenli olduğu garanti edilemez; yine de makul endüstri standartlarına uygun hareket etmeyi hedefliyoruz.
+
+9. Kullanıcı Hakları
+
+Bulunduğunuz ülkenin mevzuatına (örneğin KVKK, GDPR vb.) göre aşağıdaki haklara sahip olabilirsiniz:
+
+Hakkınızda hangi verilerin işlendiğini öğrenme
+
+Eksik veya yanlış verilerin düzeltilmesini talep etme
+
+İşlenmesini gereksiz gördüğünüz verilerin silinmesini isteme
+
+Veri işlemesine itiraz etme veya kısıtlama talebinde bulunma
+
+Açık rızaya dayalı işleme faaliyetlerinde rızanızı geri çekme
+
+Mümkün olduğunda verilerinizin başka bir hizmet sağlayıcıya aktarılmasını isteme (veri taşınabilirliği)
+
+Bu haklarınızı kullanmak için support@seravpn.app
+ adresine e-posta gönderebilirsiniz. Talebiniz yürürlükteki mevzuatta öngörülen süre içinde değerlendirilir.
+
+10. Çocukların Gizliliği
+
+SeraVPN, 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek veri toplamayı amaçlamaz. Böyle bir durum tespit edilirse, ilgili hesap ve veriler makul süre içinde silinir.
+
+Bazı ülkelerde yaş sınırı daha yüksek olabilir; bu durumda yerel yasalara uyulur.
+
+11. Üçüncü Taraf Linkleri
+
+Uygulama, üçüncü taraf web sitelerine veya hizmetlere bağlantılar içerebilir. Bu sitelerin gizlilik uygulamalarından SeraVPN sorumlu değildir. İlgili sitelerin kendi gizlilik politikalarını incelemenizi tavsiye ederiz.
+
+12. Gizlilik Politikasındaki Değişiklikler
+
+Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler yapıldığında:
+
+Uygulama içinde bir bildirim gösterilebilir veya
+
+SeraVPN’e ait dijital kanallarda güncel sürüm yayımlanabilir.
+
+“Son güncelleme tarihi” en son değişiklik tarihini gösterir.
+
+13. İletişim
+
+Gizlilik Politikası ile ilgili her türlü soru, görüş ve talepleriniz için:
+
+E-posta: eerenyiildirim@gmail.com
+
+Adres: Ankara, Türkiye
+
+bizimle iletişime geçebilirsiniz.
