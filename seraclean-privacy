@@ -1,0 +1,159 @@
+ClearBoost – Gizlilik Politikası
+
+Yürürlük tarihi: 05.12.2025
+Bu Gizlilik Politikası, ClearBoost (“uygulama”, “biz”, “bizim”) tarafından sunulan hizmetleri kullanırken kişisel verilerinizin nasıl işlendiğini açıklar.
+
+Uygulamayı indirip kullanarak bu Gizlilik Politikası’nı okuduğunuzu ve kabul ettiğinizi beyan etmiş olursunuz.
+
+1. Topladığımız Veriler
+
+ClearBoost, cihazınızı hızlandırmak ve gereksiz dosyaları temizlemek için çalışır. Bunu yaparken iki ana veri türüyle karşılaşır:
+
+1.1. Cihaz İçi Veri (Telefonunuzdaki dosyalar)
+
+Önbellek dosyaları
+
+Geçici dosyalar
+
+Uygulama klasörlerindeki medya dosyaları (örneğin WhatsApp, Instagram vb.)
+
+Büyük dosyalar ve ekran görüntüleri gibi depolama öğeleri
+
+Bu veriler yalnızca cihazınızda analiz edilir ve temizleme işlemi cihazınız üzerinde yapılır. Sunucularımıza yüklenmez, tarafımızca saklanmaz veya üçüncü kişilerle paylaşılmaz.
+
+1.2. Teknik ve Kullanım Verileri
+
+Uygulamanın düzgün çalışması ve iyileştirilmesi için bazı anonim teknik veriler toplayabiliriz, örneğin:
+
+Cihaz modeli ve işletim sistemi versiyonu
+
+Uygulamanın sürümü
+
+Uygulama içi kullanım istatistikleri (hangi özelliklerin ne sıklıkta kullanıldığı)
+
+Hata kayıtları ve çökme raporları (crash logs)
+
+Bu veriler genellikle anonimdir ve kimliğinizi doğrudan tespit etmemize imkân vermez.
+
+1.3. Abonelik ve Ödeme Verileri (Pro sürüm için)
+
+ClearBoost Pro aboneliğini satın aldığınızda:
+
+Ödeme işlemleri Google Play Store / Google Play Faturalandırma sistemi üzerinden gerçekleşir.
+
+Kredi kartı veya ödeme bilgileriniz bizim tarafımızdan görülmez ve saklanmaz.
+
+Biz sadece Google Play’den gelen; satın alma durumu, aboneliğin aktif/pasif olduğu bilgisi gibi anonimleştirilmiş işlem sonuçlarını alırız.
+
+2. İzinler ve Bunları Neden İstiyoruz?
+
+Uygulama, aşağıdaki izinleri isteyebilir (tam listesi Android sürümüne göre farklılık gösterebilir):
+
+Depolama / Dosyalar (READ/WRITE_EXTERNAL_STORAGE veya eşdeğeri izinler):
+Depolama analizini yapmak, gereksiz dosyaları bulmak ve temizleyebilmek için zorunludur.
+
+Uygulama Kullanım Verileri (Usage Access / PACKAGE_USAGE_STATS – isteğe bağlı):
+Nadiren kullanılan uygulamaları tespit etmek ve “Kullanılmayan Uygulamalar” özelliğini sağlayabilmek için kullanılır.
+
+Bildirim Erişimi (Notification Access) – isteğe bağlı bir özellikse:
+Bildirim temizleyici özelliğini kullanıyorsanız, bildirimleri gruplamak ve yönetmek için gereklidir. İçerikler cihazınızdan dışarı aktarılmaz.
+
+Ağ erişimi (INTERNET):
+Reklamların ve analitik servislerin çalışması, ayrıca lisans/abonelik kontrolü için gereklidir.
+
+İzinleri vermek istemezseniz, ilgili özelliği kullanamayabilirsiniz; ancak uygulamayı kısmen kullanmaya devam edebilirsiniz.
+
+3. Verilerinizi Nasıl Kullanıyoruz?
+
+Topladığımız verileri şu amaçlarla kullanırız:
+
+Uygulamanın temel fonksiyonlarını sağlamak (temizlik, hızlandırma, depolama analizi vb.)
+
+Hata ve performans sorunlarını tespit etmek ve gidermek
+
+Uygulama deneyimini geliştirmek, yeni özellikleri planlamak
+
+Yasal yükümlülüklerimizi yerine getirmek (faturalandırma, kayıtlar vb.)
+
+Reklam ve analiz amaçları (aşağıda açıklanmıştır)
+
+4. Üçüncü Taraf Hizmetleri
+
+ClearBoost, aşağıdaki gibi üçüncü taraf hizmetlerden yararlanabilir:
+
+Google Play Hizmetleri
+
+Google Play Billing (Ödeme/abonelik)
+
+Reklam ağları (örneğin Google AdMob vb.)
+
+Analitik araçları (örneğin Firebase Analytics vb.)
+
+Bu hizmetler, kendi gizlilik politikalarına göre anonim veya kişisel veriler işleyebilir. Bu üçüncü taraf hizmetlerin veri işleme süreçleri üzerinde doğrudan kontrolümüz yoktur.
+
+Kullandığımız hizmetlere örnek olması açısından, lütfen ilgili sağlayıcıların gizlilik politikalarını inceleyin (Google, Firebase, AdMob vb.).
+
+5. Çerezler ve Benzeri Teknolojiler
+
+ClearBoost, tarayıcı tabanlı bir uygulama olmadığı için klasik anlamda çerez (cookie) kullanmaz. Ancak, üçüncü taraf reklam ve analitik sağlayıcılar, cihazınızda belirteçler (device ID, reklam kimliği vs.) üzerinden benzer takip mekanizmaları kullanabilir.
+
+6. Verilerin Saklanması ve Güvenlik
+
+Dosya temizleme sırasında taranan içerikler cihazınızda kalır; bizim sunucularımıza gönderilmez.
+
+Uygulama içi tercihlerinizi (tema, dil, bazı ayarlar) cihazınızda veya Google hesabınızla eşleştirilmiş olarak saklayabiliriz.
+
+Teknik veriler ve istatistikler güvenli sistemler üzerinde tutulur ve yetkisiz erişime karşı korunur.
+
+Bununla birlikte, internet üzerinden veri aktarımının ve elektronik depolamanın %100 güvenli olduğunu garanti edemeyiz.
+
+7. Verilerin Üçüncü Kişilerle Paylaşımı
+
+Verilerinizi:
+
+Kanunların gerektirdiği durumlar,
+
+Yasal bir talep, mahkeme kararı veya resmi makam isteği,
+
+Hizmeti sağlamamıza yardımcı olan iş ortaklarımız (reklam, analitik, ödeme sağlayıcıları)
+
+haricinde üçüncü kişilerle paylaşmayız.
+Paylaşım durumunda, mümkün olduğunca anonimleştirilmiş ve minimum veri prensibiyle hareket ederiz.
+
+8. Çocukların Gizliliği
+
+ClearBoost, 13 yaşın altındaki çocuklara yönelik değildir.
+13 yaşından küçük bir çocuğun kişisel verilerini bilmeden topladığımızı fark edersek, bu verileri silmek için makul adımları atarız. Böyle bir durumdan haberdar olursanız lütfen bizimle iletişime geçin.
+
+9. Haklarınız
+
+Bulunduğunuz ülkenin veri koruma mevzuatına bağlı olarak:
+
+Hakkınızda tutulan verilere erişme,
+
+Verilerin düzeltilmesini veya silinmesini talep etme,
+
+Belirli veri işleme faaliyetlerine itiraz etme,
+
+Onaya dayalı işlemleri geri çekme
+
+haklarına sahip olabilirsiniz.
+
+Bu haklardan herhangi birini kullanmak için aşağıdaki iletişim bilgileri üzerinden bize ulaşabilirsiniz.
+
+10. Bu Politikadaki Değişiklikler
+
+Bu Gizlilik Politikası’nı gerektiğinde güncelleyebiliriz.
+Güncellenmiş sürüm uygulama içinde ve/veya ilgili mağaza sayfasında yayınlandığı anda geçerli olur.
+
+Üst kısımda yer alan “Yürürlük Tarihi” değişiklik yapıldığında güncellenecektir.
+
+11. İletişim
+
+Bu Gizlilik Politikası hakkında sorularınız veya talepleriniz varsa bizimle iletişime geçebilirsiniz:
+
+E-posta: eerenyiildirim@gmail.com
+
+Geliştirici/Şirket adı: Eren YILDIRIM
+
+Adres (isteğe bağlı): Turkey
