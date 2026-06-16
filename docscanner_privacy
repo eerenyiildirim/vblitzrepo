@@ -6,154 +6,175 @@ This Privacy Policy explains how **Document Scanner - PDF Creator and Editor** (
 
 ## 1. Overview
 
-Document Scanner - PDF Creator and Editor is a PDF and document utility app that lets users view, scan, create, edit, convert, compress, split, merge, and manage PDF and document files.
+Document Scanner - PDF Creator and Editor is a PDF and document utility app that helps you scan, view, create, convert, compress, split, merge, annotate, secure, and manage documents on your device.
 
-Most document processing is performed locally on your device. Your PDF files, images, and documents are not uploaded to our servers.
+Most document processing happens locally on your device. We do not run our own server for uploading or storing your documents.
 
 ## 2. Information We Do Not Collect Directly
 
-We do not require account registration and we do not directly collect personal information such as:
+We do not require user registration.
+
+We do not directly collect or store personal information such as:
 
 - Name
 - Email address
 - Phone number
 - Contacts
 - Precise location
-- Payment information
-- User account credentials
+- Payment card details
+- Account passwords
 
-We do not operate our own backend server for uploading, storing, or processing your documents.
+We do not create a user account system inside the app.
 
 ## 3. Files and Documents
 
-The app may access files and documents selected by the user or available on the device, including PDF, image, Word, Excel, and PowerPoint files.
+The app may access files and documents that you choose to open or that are available on your device, including:
 
-This access is used only to provide the app’s core features, such as:
+- PDF files
+- Images
+- Word documents
+- Excel spreadsheets
+- PowerPoint presentations
 
-- Opening and viewing documents
+This access is used only to provide app features such as:
+
+- Opening and viewing files
 - Scanning documents to PDF
-- Creating PDF files
-- Converting images and documents
-- Compressing PDF files
-- Splitting, merging, rotating, and organizing PDF pages
+- Creating and editing PDFs
+- Converting files between formats
+- Compressing, splitting, merging, rotating, and organizing PDFs
 - Adding signatures, watermarks, annotations, or metadata
-- Displaying recent or available documents inside the app
+- Showing recent and previously opened files inside the app
 
-Files are processed locally on your device. We do not upload your files to our own servers.
+Files are processed locally whenever possible. We do not upload your documents to our own servers.
 
-## 4. Storage Permission and All Files Access
+## 4. Storage Access
 
-On some Android versions, the app may request storage access, including broad file access, to allow users to browse, open, and manage document files directly inside the app.
+Depending on your Android version and the app build you use, the app may request storage access or broad file access so it can browse and open documents on your device.
 
-This permission is used only for user-facing document management features. The app does not use file access for advertising profiling, analytics, or background collection of personal files.
+This permission is used only for document-related features. It is not used for advertising profiling, analytics, or background collection of your personal files.
 
-You can revoke storage permissions at any time from your device settings.
+You can revoke storage permissions at any time in your device settings.
 
-## 5. Camera Permission
+## 5. Camera Access
 
-The app may request camera permission for the “Scan to PDF” feature.
+The app may request camera permission for scanning documents to PDF.
 
-Camera access is used only when you choose to scan a document. Captured images are processed locally on your device and used to create PDF files. We do not upload camera images to our servers.
+Camera access is used only when you choose to scan a document. Captured images are processed locally on your device and used to create PDF files.
 
-You can revoke camera permission at any time from your device settings.
+We do not upload camera images to our own servers.
 
-## 6. Locally Stored Data
+You can revoke camera permission at any time in your device settings.
+
+## 6. Local Data Stored on Your Device
 
 The app may store limited data locally on your device, including:
 
 - Recent file references
 - App settings and preferences
-- Temporary cache files
-- Output files created by the user
+- Cache files
+- Output files created by you
+- Premium entitlement state
 - Review prompt preferences
 
-This data is stored on your device and is used to improve app functionality. You can clear cache or app data from the app settings or Android system settings.
+This data stays on your device unless you choose to delete it, export it, or share it.
+
+You can clear app data from Android settings or uninstall the app to remove local data.
 
 ## 7. Advertising
 
-The Play Store version of the app may display ads using Google AdMob.
+The Play Store version of the app may show ads through Google AdMob.
 
-Google AdMob may collect and process certain information as described in Google’s own policies, which may include:
+AdMob and Google may collect and process certain information to provide, limit, personalize, and measure ads. This may include:
 
 - Advertising ID
 - Device information
 - IP address
 - App interaction data
 - Ad performance data
-- Approximate location inferred from IP address
 - Diagnostic information
+- Approximate location inferred from IP address
 
-This information may be used by Google to provide, limit, personalize, and measure ads, depending on your device settings and consent choices.
+We do not directly control Google’s data processing through AdMob.
 
-We do not directly control Google’s data collection through AdMob.
+The F-Droid and open-source builds do not include Google Ads SDK.
 
-You can learn more about how Google uses information from apps that use its services here:
+You can manage ad personalization settings from your Google account or device settings, including resetting or deleting your Advertising ID where available.
 
-https://policies.google.com/technologies/partner-sites
+## 8. In-App Purchases and Premium
 
-You can manage ad personalization settings from your Google account or Android device settings.
+The Play Store version of the app may offer in-app purchases to unlock premium, ad-free features.
 
-## 8. Third-Party Services
+Purchases are processed through Google Play Billing. We do not receive or store your payment card details.
 
-The app may use the following third-party services or SDKs depending on the app version:
+If you purchase premium access, the app stores a local entitlement state on your device so the app can remove ads and unlock premium features.
 
-- **Google AdMob** for advertisements
-- **Google ML Kit** for OCR in the Play Store version
-- **Google Play In-App Review** for app rating prompts
-- Open-source libraries for PDF, image, OCR, and document processing
+The F-Droid and open-source builds do not include Google Play Billing.
 
-The F-Droid or open-source builds may exclude Google services and use open-source alternatives where applicable.
+## 9. Third-Party Services
 
-## 9. Data Sharing
+Depending on the app build and feature set, the app may use the following third-party services:
+
+- Google AdMob for ads
+- Google Play Billing for in-app purchases
+- Google Play In-App Review for app rating prompts
+- Google ML Kit or open-source OCR libraries for text recognition
+- Open-source PDF and document processing libraries
+
+These services may process data according to their own privacy policies.
+
+## 10. Data Sharing
 
 We do not sell your personal data.
 
-We do not share your documents with third parties.
+We do not share your documents with third parties for our own business purposes.
 
-However, third-party SDKs such as Google AdMob may process certain device, advertising, diagnostic, or interaction data according to their own policies.
+However, third-party services such as Google AdMob and Google Play Billing may process relevant data as part of their services, according to their own policies.
 
-## 10. Children’s Privacy
+## 11. Data Retention
+
+We keep local app data only as long as needed for app functionality.
+
+You can remove local data by:
+
+- Clearing recent history in the app
+- Clearing app cache or app data in Android settings
+- Deleting generated output files manually
+- Uninstalling the app
+
+We do not maintain a server-side user database.
+
+## 12. Children’s Privacy
 
 The app is not specifically directed to children under 13.
 
-If the app is used by children, parents or guardians should supervise usage. The app does not knowingly collect personal information from children directly. Advertising behavior may depend on Google Play, AdMob, and regional policy requirements.
+We do not knowingly collect personal information from children. If a parent or guardian believes a child has provided personal information, they should contact us so we can review the issue.
 
-## 11. Data Security
+## 13. Security
 
-The app is designed to process documents locally whenever possible. Temporary files and app data remain on your device unless you choose to share or export them.
+We design the app to process documents locally whenever possible.
 
-You are responsible for managing access to files you create, save, export, or share from your device.
+You are responsible for controlling access to your device and your files. If you share files from the app, those files may be visible to the apps or services you choose.
 
-## 12. Data Retention and Deletion
+## 14. Your Choices
 
-The app keeps local data only as needed for functionality, such as recent file history, settings, and temporary cache.
+You can control your privacy choices by:
 
-You can delete local data by:
-
-- Clearing recent history inside the app
-- Clearing cache inside the app
-- Deleting output files manually
-- Clearing app data from Android settings
-- Uninstalling the app
-
-We do not maintain a server-side account or document database for users.
-
-## 13. Your Choices
-
-You can control app access by:
-
-- Granting or denying storage permission
 - Granting or denying camera permission
+- Granting or denying storage permission
 - Revoking permissions from Android settings
-- Managing ad personalization in Google settings
+- Managing Google ad personalization settings
+- Purchasing premium to remove ads
 - Clearing app data or uninstalling the app
 
-## 14. Changes to This Privacy Policy
+## 15. Changes to This Privacy Policy
 
-We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated “Last Updated” date.
+We may update this Privacy Policy from time to time.
 
-## 15. Contact Us
+Any changes will be posted on this page with an updated “Last Updated” date.
 
-If you have questions about this Privacy Policy, you can contact us at:
+## 16. Contact Us
+
+If you have questions about this Privacy Policy, contact us at:
 
 **Email:** eerenyiildirim@gmail.com
