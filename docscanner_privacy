@@ -1,0 +1,159 @@
+# Privacy Policy
+
+**Last Updated:** June 16, 2026
+
+This Privacy Policy explains how **Document Scanner - PDF Creator and Editor** (“we”, “our”, or “the app”) handles information when you use the app.
+
+## 1. Overview
+
+Document Scanner - PDF Creator and Editor is a PDF and document utility app that lets users view, scan, create, edit, convert, compress, split, merge, and manage PDF and document files.
+
+Most document processing is performed locally on your device. Your PDF files, images, and documents are not uploaded to our servers.
+
+## 2. Information We Do Not Collect Directly
+
+We do not require account registration and we do not directly collect personal information such as:
+
+- Name
+- Email address
+- Phone number
+- Contacts
+- Precise location
+- Payment information
+- User account credentials
+
+We do not operate our own backend server for uploading, storing, or processing your documents.
+
+## 3. Files and Documents
+
+The app may access files and documents selected by the user or available on the device, including PDF, image, Word, Excel, and PowerPoint files.
+
+This access is used only to provide the app’s core features, such as:
+
+- Opening and viewing documents
+- Scanning documents to PDF
+- Creating PDF files
+- Converting images and documents
+- Compressing PDF files
+- Splitting, merging, rotating, and organizing PDF pages
+- Adding signatures, watermarks, annotations, or metadata
+- Displaying recent or available documents inside the app
+
+Files are processed locally on your device. We do not upload your files to our own servers.
+
+## 4. Storage Permission and All Files Access
+
+On some Android versions, the app may request storage access, including broad file access, to allow users to browse, open, and manage document files directly inside the app.
+
+This permission is used only for user-facing document management features. The app does not use file access for advertising profiling, analytics, or background collection of personal files.
+
+You can revoke storage permissions at any time from your device settings.
+
+## 5. Camera Permission
+
+The app may request camera permission for the “Scan to PDF” feature.
+
+Camera access is used only when you choose to scan a document. Captured images are processed locally on your device and used to create PDF files. We do not upload camera images to our servers.
+
+You can revoke camera permission at any time from your device settings.
+
+## 6. Locally Stored Data
+
+The app may store limited data locally on your device, including:
+
+- Recent file references
+- App settings and preferences
+- Temporary cache files
+- Output files created by the user
+- Review prompt preferences
+
+This data is stored on your device and is used to improve app functionality. You can clear cache or app data from the app settings or Android system settings.
+
+## 7. Advertising
+
+The Play Store version of the app may display ads using Google AdMob.
+
+Google AdMob may collect and process certain information as described in Google’s own policies, which may include:
+
+- Advertising ID
+- Device information
+- IP address
+- App interaction data
+- Ad performance data
+- Approximate location inferred from IP address
+- Diagnostic information
+
+This information may be used by Google to provide, limit, personalize, and measure ads, depending on your device settings and consent choices.
+
+We do not directly control Google’s data collection through AdMob.
+
+You can learn more about how Google uses information from apps that use its services here:
+
+https://policies.google.com/technologies/partner-sites
+
+You can manage ad personalization settings from your Google account or Android device settings.
+
+## 8. Third-Party Services
+
+The app may use the following third-party services or SDKs depending on the app version:
+
+- **Google AdMob** for advertisements
+- **Google ML Kit** for OCR in the Play Store version
+- **Google Play In-App Review** for app rating prompts
+- Open-source libraries for PDF, image, OCR, and document processing
+
+The F-Droid or open-source builds may exclude Google services and use open-source alternatives where applicable.
+
+## 9. Data Sharing
+
+We do not sell your personal data.
+
+We do not share your documents with third parties.
+
+However, third-party SDKs such as Google AdMob may process certain device, advertising, diagnostic, or interaction data according to their own policies.
+
+## 10. Children’s Privacy
+
+The app is not specifically directed to children under 13.
+
+If the app is used by children, parents or guardians should supervise usage. The app does not knowingly collect personal information from children directly. Advertising behavior may depend on Google Play, AdMob, and regional policy requirements.
+
+## 11. Data Security
+
+The app is designed to process documents locally whenever possible. Temporary files and app data remain on your device unless you choose to share or export them.
+
+You are responsible for managing access to files you create, save, export, or share from your device.
+
+## 12. Data Retention and Deletion
+
+The app keeps local data only as needed for functionality, such as recent file history, settings, and temporary cache.
+
+You can delete local data by:
+
+- Clearing recent history inside the app
+- Clearing cache inside the app
+- Deleting output files manually
+- Clearing app data from Android settings
+- Uninstalling the app
+
+We do not maintain a server-side account or document database for users.
+
+## 13. Your Choices
+
+You can control app access by:
+
+- Granting or denying storage permission
+- Granting or denying camera permission
+- Revoking permissions from Android settings
+- Managing ad personalization in Google settings
+- Clearing app data or uninstalling the app
+
+## 14. Changes to This Privacy Policy
+
+We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated “Last Updated” date.
+
+## 15. Contact Us
+
+If you have questions about this Privacy Policy, you can contact us at:
+
+**Email:** eerenyiildirim@gmail.com
